@@ -1,0 +1,7 @@
+name: Ícones FontAwesome
+js_form:
+    ../../../../../../assets/plugins/embeddedjs/ejs.js
+    js/fontawesome.js
+attr:
+    class: icon-fontawesome
+
