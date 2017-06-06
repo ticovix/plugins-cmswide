@@ -7,9 +7,9 @@ if (!defined('BASEPATH')) {
 class Fontawesome
 {
 
-    public function output($icon)
+    public function output($icon, $field, $fields, $page)
     {
-        if (!empty($icon)) {
+        if (!empty($icon) && $page == 'search') {
             return '<div class="fa ' . $icon . '"></div>';
         }
         return $icon;
