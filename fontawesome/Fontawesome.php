@@ -12,6 +12,7 @@ class Fontawesome
         if (!empty($icon) && $page == 'search') {
             return '<div class="fa ' . $icon . '"></div>';
         }
+
         return $icon;
     }
 }
