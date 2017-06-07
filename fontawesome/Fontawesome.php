@@ -9,7 +9,7 @@ class Fontawesome
 
     public function output($icon, $field, $fields, $page)
     {
-        if (!empty($icon) && $page == 'search') {
+        if (!empty($icon) && $page != 'form') {
             return '<div class="fa ' . $icon . '"></div>';
         }
 
