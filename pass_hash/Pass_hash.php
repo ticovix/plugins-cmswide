@@ -18,12 +18,19 @@ class Pass_hash {
             $section = get_section();
             $id_post = $CI->uri->segment(8);
             $post = $CI->posts_model->get_post($section, $id_post);
-            $value = $post[$field['column']];
+            $value = $post[$field['database']['column']];
         }
+
         return $value;
     }
 
     public function output($value) {
+        $CI = &get_instance();
+        $type = $CI->uri->segment(7);
+        if($type == 'edit'){
+            $value = '';
+        }
+
         return $value;
     }
 
